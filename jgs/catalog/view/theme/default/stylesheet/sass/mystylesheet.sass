@@ -1,0 +1,1923 @@
+$b: #000
+$w: #fff
+$lblue: #3D8CC4
+$dblue: #364C7D
+$dgrdnt: linear-gradient(90deg, rgba(85,185,228,1) 0%, rgba(57,139,198,1) 52%, rgba(35,95,166,1) 100%)
+$rdgrdnt: linear-gradient(90deg, rgba(35,95,166,1) 0%, rgba(57,139,198,1) 52%, rgba(85,185,228,1) 100%)
+$lgrdnt: linear-gradient(90deg, rgba(166,214,236,1) 0%, rgba(118,187,218,1) 58%, rgba(78,166,204,1) 100%)
+$grey: #6B6B6B
+$ygrdnt: linear-gradient(90deg, rgba(255,209,3,1) 0%, rgba(246,178,0,1) 58%, rgba(233,132,35,1) 100%)
+$rygrdnt: linear-gradient(90deg, rgba(233,132,35,1) 0%, rgba(246,178,0,1) 58%, rgba(255,209,3,1) 100%)
+
+*
+	font-family: 'Montserrat', sans-serif
+	outline: none !important
+
+input
+	min-height: 40px
+	&::-ms-clear,
+	&::-ms-reveal
+		display: none !important
+
+input, textarea
+	border-radius: 5px !important
+
+button, input
+	outline: none !important
+	&:focus
+		outline: none !important
+
+*, label
+	font-weight: 500
+
+a:not(.sticker)
+	&:hover
+		color: $dblue !important
+
+#button-coupon, #button-login
+	padding: .5em !important
+	min-width: 5em !important
+	border-radius: 0 !important
+
+#quickcheckout-back
+	background: $dblue !important
+	border-color: $dblue
+	min-width: 12em
+
+#quickcheckout-back  
+	background: $w
+
+#quickcheckout-back
+	&:hover, &:focus
+		color: $dblue !important
+		background: $w !important
+		border-color: $dblue !important
+
+.cart-dorpdown-footer a
+	border: 1px solid transparent
+	&:hover
+		border: 1px solid $dblue
+		color: $dblue !important
+		background: $w !important
+
+.checkout-success .line-4 a
+	&:hover 
+		color: $dblue !important
+
+.btn-primary, #quickcheckout-back, .account-password .btn-default
+	background: $dgrdnt
+	border: none
+	min-width: 150px
+	font-weight: 600
+	padding: calc(10px + (15 - 10) * (100vw - 320px) / (1920 - 320)) 18px
+	font-size: 12px
+	color: $w !important
+	letter-spacing: 1px
+	border-radius: 25px !important
+	transition: .3s ease
+	&:hover, &:active, &:focus
+		background: $rdgrdnt !important
+		color: $w !important
+
+.btn-default:not(.btn-number, #button-search)
+	background: $dgrdnt
+	min-width: 150px
+	font-weight: 600
+	padding: calc(10px + (15 - 10) * (100vw - 320px) / (1920 - 320)) 18px
+	font-size: 12px
+	color: $w !important
+	letter-spacing: 1px
+	border: none
+	border-radius: 25px !important
+	&:hover, &:active, &:focus
+		background: $w !important
+		color: $w !important
+
+.btn-number
+	background: #B4B4B4 !important
+	color: $w
+	&:hover
+		background: #707070 !important
+		color: $w !important
+
+.btn-mi
+	min-width: 4em !important
+	padding: 4px 6px 0
+
+.glyphicon-minus
+	&:before
+		content: '-'
+		display: inline-block
+
+.glyphicon-plus
+	&:before
+		content: '+'
+		display: inline-block
+
+.account-container
+	a
+		&:hover
+			border-color: $dblue !important
+			h3, span:before, p
+				color: $dblue !important
+
+.cart-dorpdown-item-charges
+	max-width: 50%
+
+.cart-dorpdown-footer
+	a
+		background: $dblue
+		color: $w !important
+		border-color: $dblue
+		&:hover
+			color: $dblue !important
+			border-color: $dblue
+			background: $w
+
+.breadcrumb
+	background: none
+	border: none
+	display: flex
+	justify-content: center
+	text-transform: uppercase
+	margin-bottom: calc(40px + (80 - 40) * (100vw - 320px) / (1920 - 320))
+	li
+		a
+			color: darkgrey
+			font-size: 12px !important
+			letter-spacing: 0 !important
+			font-weight: 600 !important
+		&:first-of-type
+			padding-left: 0
+
+.alert
+	.alert-danger, .alert-success
+		margin-top: 3%
+
+#content
+	margin-bottom: 2em
+	line-height: 2em
+
+#mobileNav
+	i
+		color: $dblue
+
+#sidr
+	.cd-accordion-menu
+		a
+			color: $w !important
+			&:hover
+				color: $w !important
+				font-weight: 600
+
+	a
+		color: $w !important
+		&:hover
+			color: $w !important
+			font-weight: 600
+
+.account-forgotten
+	form
+		fieldset
+			padding-top: 3%
+
+.account-order
+	.modal-dialog
+		.modal-body
+			ul
+				margin: auto
+				width: auto
+				li
+					a
+						background: $dblue
+						color: $w
+						border: 1px solid $dblue
+						transition: .3s ease
+						.badge
+							color: $dblue
+				&:hover
+					a
+						background: $w
+						color: $dblue
+			#reorder_order
+				width: auto
+				margin: auto
+				background: $dblue
+				color: $w
+				border: 1px solid $dblue
+				transition: .3s ease
+				&:hover
+					background: $w
+					color: $dblue
+
+.information-contact-success
+	#content
+		text-align: center
+		.buttons
+			margin-top: 4em !important
+
+.pagination-container
+	text-align: center
+.pagination
+	li
+		a, span
+			border: none
+			color: $b
+			font-weight: 600
+			width: 30px !important
+			height: 30px !important
+			display: flex
+			align-items: center
+			justify-content: center	
+			border-radius: 50%
+			margin: 0 .5em
+		a
+			background: transparent
+
+		&.active, &:hover
+			span, a
+				color: $w !important
+				background: $dblue
+
+		&.arrow
+			a
+				border: 1px solid $dblue
+
+#side-price
+	.ui-slider-range, .ui-slider-handle
+		background: $dblue
+
+	.ui-slider-handle
+		width: 17px
+		height: 17px
+
+.information-contact
+	#content
+		padding: 0
+
+		.col-xs-12
+			padding: 0
+
+	.lower-contact
+		h3
+			font-weight: 700
+			margin-bottom: 17px
+			font-size: 17px
+
+		.inner-contact-info
+			display: flex
+			flex-direction: column
+
+			*
+				color: $b !important
+			a
+				&:hover
+					color: $dblue !important
+
+			.email
+				@media (max-width: 1200px)
+					width: 90%
+					overflow: auto
+
+			.tel
+				margin-bottom: calc(10px + (20 - 10) * (100vw - 320px) / (1920 - 320))
+
+		@media (min-width: 991px)
+			display: flex
+			justify-content: space-between	
+			width: 100%
+			padding-top: 50px
+
+			.contact-information
+				width: 25%
+
+			form
+				width: 75%
+
+		@media (max-width: 991px)
+			.contact-information
+				margin-bottom: 15px
+
+	.contact-footer
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+
+		#google_recaptcha
+			margin-bottom: 0
+
+		@media (min-width: 768px)
+			justify-content: space-between
+
+		@media (max-width: 768px)
+			justify-content: center
+
+			#google_recaptcha
+				margin-bottom: 15px
+
+.container
+	width: 85%
+	margin: 0 auto
+	@media (max-width: 991px)
+		min-width: auto !important
+		width: 90%
+
+h2
+	display: none
+
+.iid-7
+	.custom2
+		padding: 0
+
+	.expertise-con
+		width: 90%
+		margin: 0 auto
+
+		.inner-cont
+			display: flex
+			align-items: center
+			justify-content: space-around
+
+		.image-con
+			img
+				width: 100%
+				box-shadow: 0 0 15px darkgrey
+
+		.text-con
+			h3
+				font-size: calc(25px + (35 - 25) * (100vw - 320px) / (1920 - 320))
+				margin-bottom: calc(10px + (20 - 10) * (100vw - 320px) / (1920 - 320))
+
+	@media (min-width: 991px)
+		.inner-cont
+			margin-bottom: calc(40px + (90 - 40) * (100vw - 320px) / (1920 - 320))
+			.image-con, .text-con
+				width: calc((100% / 2) - 25px)
+				margin: 0 25px
+
+			.text-con
+				max-height: calc(250px + (300 - 250) * (100vw - 991px) / (1920 - 991))
+				overflow: auto
+
+			&.even
+				.image-con
+					order: 2
+
+				.text-con
+					order: 1
+
+	@media (max-width: 991px)
+		.expertise-con
+			width: 95%
+
+			.inner-cont
+				flex-direction: column
+				margin-bottom: 30px
+
+				.image-con
+					margin-bottom: 20px
+
+.product-manufacturer
+	.brands-cont
+		border: none
+		display: flex
+		flex-wrap: wrap
+
+		.brand-cont
+			box-shadow: 0 0 15px lightgrey
+			margin: 15px
+			transition: .3s ease
+			position: relative
+			@media (min-width: 991px)
+				width: calc((100% / 4) - 30px)
+
+			@media (max-width: 991px)
+				width: calc((100% / 2) - 30px)
+
+			@media (max-width: 400px)
+				width: calc((100% / 1) - 30px)
+
+			.overlay, a
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background: rgba(0,0,0,.1)
+				cursor: pointer
+
+			img
+				width: 100%
+				padding: 1.5px
+
+			&:hover
+				background: $dgrdnt
+
+				.overlay
+					opacity: 1
+
+.product-category, .product-special
+	@media (max-width: 991px) and (min-width: 768px)
+		.container
+			width: 95%
+
+		aside
+			padding-right: 0
+			.list-group-item
+				padding-left: 0 !important
+				padding-right: 0 !important
+
+	.pagination
+		margin-bottom: 40px
+
+	aside
+		@media (min-width: 768px)
+			width: 20%
+			padding-left: 0
+
+		.list-group-item
+			&.item-header
+				font-size: 18px
+
+		*
+			text-transform: uppercase
+			font-weight: 500
+			color: $grey
+			font-size: 15px
+
+		.side-categories-level-1
+			.item
+				position: relative
+				a
+					padding: 8px 16px
+					text-transform: capitalize
+
+				.toggle
+					position: absolute
+					right: 0
+					bottom: 0
+					top: 0
+					display: flex !important
+					align-items: center
+					justify-content: center
+
+					*
+						font-size: 22px
+
+					.plus
+						color: $dblue
+						position: relative
+						span
+							display: none
+							position: absolute
+							left: 0
+							right: 0
+							top: 0
+
+				&.level-1
+					border: 1px solid $dblue
+					margin: 12px 0
+					border-radius: 20px
+					overflow: hidden
+
+					a
+						color: $dblue
+
+					&:hover, &.active
+						background: $dgrdnt
+						a
+							color: $w !important
+
+						.toggle
+							.plus
+								color: transparent
+								span
+									color: $w
+									display: block
+
+				&.level-2
+					a
+						padding: 2px 16px
+					&:hover, &.active
+						a
+							text-decoration: underline
+						
+						.toggle
+							.plus
+								color: transparent
+								span
+									// color: $w
+									display: block
+							
+
+	#content
+		@media (min-width: 768px)
+			width: 80%
+
+	#side-categories .item-header + .list-group-item
+		margin-top: 15px
+
+	.sorts
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 20px
+
+		.form-group
+			margin-bottom: 0
+
+		.flex-wrap
+			justify-content: flex-end
+		
+		@media (min-width: 992px)		
+			.col-md-6
+				width: 190px
+
+		@media (min-width: 768px)
+			.custom-select
+				margin: 0px
+				height: 52px
+				width: 100%
+				border-width: 1px
+				border-style: solid
+				border-color: #dadada
+				box-shadow: none
+				font-size: 16px !important
+				color: #000
+				-webkit-appearance: none
+				-webkit-border-radius: 0px
+				-moz-appearance: none
+				appearance: none
+				background: url(../../../../../../image/catalog/dropdown.png) no-repeat 85% 50% #fff
+				background-size: 11px 6px
+				border-radius: 0px !important
+				padding: 12px 20px !important
+				height: auto !important
+				padding-right: 40px !important
+
+.sticker
+	min-width: 70px
+	text-transform: uppercase
+	font-size: 12px
+	padding: 5px 10px !important
+	text-align: center
+
+.product-gutter
+	.product-block
+		&:hover
+			img
+				opacity: .6
+
+	.product-details
+		.price
+			color: $dblue
+
+			.price-new
+				~ .price-old
+					color: $grey
+					text-decoration: line-through
+
+	.product-name
+		display: -webkit-box
+		-webkit-line-clamp: 3
+		-webkit-box-orient: vertical
+		overflow: hidden
+		line-height: 1.5em
+		height: 75px
+		a
+			color: $grey
+			font-size: 16px
+			font-weight: 600
+
+	.product-button
+		display: flex
+		flex-direction: column
+		.btn
+			letter-spacing: 1px
+			margin-bottom: 8px
+			padding: 12px 16px
+			justify-content: space-around
+			display: flex
+
+			i
+				padding-right: 10px
+
+			&:hover
+				color: $w !important
+
+	@media (max-width: 991px) and (min-width: 550px)
+		.product-button
+			width: 85% !important
+			margin: auto
+
+	@media (max-width: 350px)
+		.product-button
+			width: 85% !important
+			margin: auto
+
+			.btn
+				font-size: 11px
+
+	@media (max-width: 768px)
+		.product-button
+			.btn
+				width: 80%
+				margin: 8px auto 0
+
+.product-product
+	.col-sm-6
+		h3
+			font-size: calc(20px + (25 - 20) * (100vw - 320px) / (1920 - 320))
+
+		.price
+			font-size: calc(20px + (24 - 20) * (100vw - 320px) / (1920 - 320))
+			display: flex
+			align-items: center
+			font-weight: 600
+			margin: 20px 0 0
+
+			.product-special-price
+				&.new-prices
+					// padding-right: 15px
+					color: $dblue
+
+		.spec
+			.spec-inner
+				display: flex
+				align-items: center
+			span
+				font-size: 16px
+				color: $b
+
+			span, h4
+
+		.discount-con
+			padding-left: 15px
+			li
+				i
+					display: flex
+					align-items: center
+
+		.product-description
+			margin-top: 20px
+
+		.custom-con
+			display: flex
+			align-items: center
+
+			button, .input-group-flex
+				margin: 0 15px 10px 0
+
+			@media (max-width: 1024px)
+				flex-wrap: wrap
+
+		#product
+			select
+				max-width: 300px
+				border-radius: 25px
+				height: 50px
+				border: 1px solid $grey
+
+			.input-group
+				max-width: 300px
+
+				.input-group-btn
+					button
+						width: 35px
+						&:hover
+							background: #2867AA !important
+
+					&:first-of-type
+						button
+							border-bottom-left-radius: 25px
+							border-top-left-radius: 25px
+
+					&:last-of-type
+						button
+							border-bottom-right-radius: 25px
+							border-top-right-radius: 25px
+
+				input
+					border-radius: 0 !important
+					border-top: 1px solid $grey
+					border-bottom: 1px solid $grey
+
+			.form-group
+				&.options
+					display: flex
+					align-items: center
+
+				label
+					width: calc(70px + (100 - 70) * (100vw - 320px) / (1920 - 320))
+					padding-right: 5em
+					padding-left: 0
+
+			@media (max-width: 768px)
+				.options, .custom-con
+					justify-content: center
+
+				.form-group
+					.input-group
+						margin: auto auto auto 0
+
+		.product-image-main-container
+			border: 1px solid lightblue
+
+		.product-image-additional-container
+			.slick-nav
+				display: flex !important
+				align-items: center
+				justify-content: center
+				color: $dblue
+				width: 28px
+
+				i
+					// border: 2px solid $dblue
+					border-radius: 50%
+					padding: 5px
+					// width: 28px
+					text-align: center
+
+			.slick-list
+				width: 97%
+				margin: 0 auto
+
+	#product-tabs
+		margin-top: calc(0px + (70 - 0) * (100vw - 320px) / (1920 - 320))
+		li
+			border-bottom: 1px solid lightgrey
+			a
+				background: $dgrdnt
+				color: $w !important
+				text-transform: uppercase
+				border-radius: 0
+
+	.tab-content
+		padding: 20px calc(10px + (40 - 10) * (100vw - 320px) / (1920 - 320))
+		border-bottom: 1px solid lightgrey
+
+	.featured_related_products_
+		margin-top: 50px
+
+		h2
+			display: block
+			text-transform: capitalize !important
+
+			&:after
+				display: none !important
+
+		.slick-nav
+			i
+				border: 2px solid $dblue
+				border-radius: 50%
+				width: 32px
+				text-align: center
+				height: 32px
+				font-size: 16px
+				padding: 0
+				display: flex
+				align-items: center
+				justify-content: center
+				color: $dblue
+
+	.sold-out
+		.product-image-main-container img, .product-image-additional-container img
+			opacity: .5
+
+	#waiting_list
+		margin-bottom: 30px
+
+		.waiting_list_container
+			border-radius: 10px
+			box-shadow: 0 5px 20px lightgrey
+
+			.flex-group
+				border: 2px solid $grey
+				border-radius: 10px
+				overflow: hidden
+				display: flex
+				padding: 10px 15px
+
+				@media (min-width: 1024px)
+					height: 60px
+
+				@media (max-width: 1024px)
+					input
+						text-align: center
+						text-decoration: underline
+						padding-bottom: 5px
+
+				input, button
+					height: 35px
+
+				input
+					border: none
+					color: $dblue
+					&::placeholder
+						color: $dblue
+
+				button
+					padding: 10px
+					min-width: calc(120px + (150 - 120) * (100vw - 320px) / (1920 - 320))
+
+	#product
+		.radio-set
+			display: flex
+			.inner-div
+				display: flex
+				.radio
+					margin-top: 0
+					margin-bottom: 0
+					margin-left: 20px
+					label
+						padding-right: 25px
+						width: auto !important
+						input
+							min-height: 27px !important
+
+.custom-select
+	margin: 0px
+	height: 52px
+	width: 100%
+	border-width: 1px
+	border-style: solid
+	border-color: #dadada
+	box-shadow: none
+	font-size: 16px !important
+	color: #000
+	-webkit-appearance: none
+	-webkit-border-radius: 0px
+	-moz-appearance: none
+	appearance: none
+	background: url(../../../../../../image/catalog/dropdown.png) no-repeat 90% 50% #fff
+	background-size: 11px 6px
+	padding: 12px 20px !important
+	height: auto !important
+	padding-right: 40px !important
+
+.product-gutter, #product
+	button
+		i
+			padding-right: 10px
+
+.news-ncategory
+	#articles-column-left
+		i
+			padding: 0
+
+	.news-list-wrap
+		.news-post
+			@media (min-width: 991px)
+				width: calc(100% / 3)
+
+			@media (max-width: 991px)
+				width: calc(100% / 2)
+
+			@media (min-width: 768px)
+				.art-deets
+					height: 245px
+
+					.article-description
+						-webkit-line-clamp: 2
+
+			@media (max-width: 768px)
+				width: calc(100% / 1)
+				.article-description
+					-webkit-line-clamp: 4
+
+			.art-deets
+				background: $dgrdnt
+				color: $w
+				padding: 25px
+
+				.article-name
+					display: -webkit-box
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 2
+					overflow: hidden
+					line-height: 1.5em
+					padding: 0
+					margin-bottom: 10px
+					a
+						font-size: 16px
+						color: $w !important
+
+				.date
+					font-style: italic
+					.fa-calendar
+						padding-right: 10px
+
+				.article-description
+					display: -webkit-box
+					-webkit-box-orient: vertical
+					overflow: hidden
+					line-height: 1.5em
+					margin-bottom: 10px
+
+				.article-button
+					margin-top: 30px
+					a
+						background: $ygrdnt
+						border-radius: 25px
+						padding: 14px 30px
+						color: $w !important
+						text-transform: uppercase
+						font-size: 12px
+						&:hover
+							background: $rygrdnt
+
+	.arts-filter
+		display: flex
+		justify-content: center
+
+		.custom-select
+			width: auto !important
+			font-size: 12px !important
+			padding: 2px 15px !important
+			padding-right: 25px !important
+			margin: 0 5px
+
+		@media (max-width: 991px)
+			justify-content: flex-start
+
+.news-article
+	.breadcrumb
+		li
+			&:last-of-type
+				display: none
+			&:nth-child(2)
+				&:after
+					display: none
+
+	.custom-arrows
+		display: flex
+		justify-content: space-between
+
+		.btn
+			&:hover
+				color: $w !important
+
+		.transparent-btn
+			background: transparent
+			color: $dblue !important
+			border: 1px solid $dblue
+
+		@media (max-width: 768px)
+			flex-wrap: wrap
+			justify-content: center
+
+			.btn
+				margin-bottom: 10px
+
+.custom3
+	padding: 0 !important
+
+	h2
+		display: block
+
+	.about-container
+		.about-inner-cont
+			text-align: center
+			margin-bottom: 50px
+
+			.button-con
+				margin-top: 15px
+
+		.h2-2
+			margin-top: 40px
+
+		.our-team
+			.slick-list
+				width: 95%
+				margin: 0 auto
+
+			.slick-nav
+				display: flex
+				align-items: center
+				height: 100%
+				width: 35px
+				.absolute
+					background: $dgrdnt
+					border-radius: 50%
+				i
+					font-size: 16px
+					color: $dblue
+					background: $w
+					margin: 2px
+					border: 2px solid transparent
+					border-radius: 50%
+					width: 28px
+					height: 28px
+					display: flex
+					align-items: center
+					justify-content: center
+
+				&.right
+					right: 0
+					top: 0
+
+			.teammate-container
+				background: $dgrdnt
+				box-shadow: 0 0 15px lightgrey
+				@media (min-width: 768px)
+					margin: 0 40px
+
+				// .img-con, .mate-deets
+
+				.img-con
+					height: calc(230px + (310 - 230) * (100vw - 320px) / (1920 - 320))
+					display: flex
+					align-items: center
+					position: relative
+					overflow: hidden
+
+					img
+						width: 100%
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						height: 100%
+						object-fit: cover
+
+				.mate-deets
+					padding: 25px
+					*
+						color: $w
+
+					h3
+						font-size: 18px
+						margin-bottom: 5px
+
+					h4, h3
+						display: -webkit-box
+						-webkit-box-orient: vertical
+						-webkit-line-clamp: 1
+						overflow: hidden
+
+.custom3
+	.slick-track
+		display: flex !important
+
+		.slick-slide
+			height: inherit !important
+
+.slick-nav
+	display: flex
+	align-items: center
+	height: 100%
+	width: 35px
+	.absolute
+		background: $dgrdnt
+		border-radius: 50%
+	i
+		font-size: 16px
+		color: $dblue
+		background: $w
+		margin: 2px
+		border: 2px solid transparent
+		border-radius: 50%
+		width: 28px
+		height: 28px
+		display: flex
+		align-items: center
+		justify-content: center
+
+.information-faq
+	.nav-ta
+		justify-content: center
+		display: flex
+		border: none
+		flex-wrap: wrap
+		margin-bottom: 40px
+		padding: 0
+
+		li
+			border-radius: 25px
+			// border: 1px solid $dblue
+			padding: 22px 10px
+			min-width: 200px
+			text-align: center
+			margin: 10px
+			list-style: none
+			cursor: pointer
+			position: relative
+
+			span
+				border-radius: 25px
+				color: $grey
+				text-transform: uppercase
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				display: flex
+				align-items: center
+				justify-content: center
+
+			.this-a
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				z-index: 2
+		.faq-trigger
+			border: 1px solid $dblue
+			&.active, &:hover
+				background: $dgrdnt
+				border-color: white !important
+				color: $w !important
+				border-radius: 25px
+				padding: 22px 10px
+				min-width: 200px
+				text-align: center
+
+	.tab-conten
+		.tab-pan
+			.panel-default
+				border: none
+				.panel-heading
+					&.active
+						background: $dblue
+						pointer-events: none
+						a
+							display: none
+
+						.caret
+							color: transparent
+							&:after
+								content: "-"
+								display: flex
+								align-items: center
+								font-size: 50px
+								color: #fff
+								position: absolute
+								top: -5px
+								bottom: 0
+								height: 100%
+
+				.caret
+					display: flex
+					align-items: center
+					justify-content: center
+					color: transparent
+					color: $w
+					border-top: 10px dashed
+					border-right: 10px solid transparent
+					border-left: 10px solid transparent
+
+			.panel-heading
+				background: $lblue
+				text-transform: uppercase
+				padding: 15px
+				display: flex
+				justify-content: space-between
+				align-items: center
+				position: relative
+				height: 55px
+
+				h4
+					color: $w !important
+					font-size: 15px
+
+				a
+					position: absolute
+					left: 0
+					right: 0
+					top: 0
+					bottom: 0
+
+			.panel-body
+				border: none
+				width: 95%
+				margin: 0 auto
+
+.common-home
+	.featured
+		padding: 0
+
+		.featured
+			width: 92%
+			margin: 0 auto
+
+			.slick-list
+				width: 95%
+				margin: 0 auto
+
+		+ .featured
+			.custom-con
+				flex-direction: row-reverse
+
+		.featured-module
+			padding: calc(40px + (80 - 40) * (100vw - 320px) / (1920 - 320)) 0
+
+		.custom-con
+			width: 83%
+			margin: 0 auto
+			display: flex
+			flex-wrap: wrap
+
+			+ .featured
+				width: 85%
+				margin: 0 auto
+
+			.custom-c-texts
+				background: $dgrdnt
+				display: flex
+				flex-direction: column
+				justify-content: center
+				padding: calc(20px + (40 - 20) * (100vw - 320px) / (1920 - 320))
+
+				*
+					color: $w
+					display: block
+
+				h2
+					text-align: left
+					margin-bottom: 10px
+					font-size: calc(24px + (32 - 24) * (100vw - 320px) / (1920 - 320))
+
+				h4
+					line-height: 1.5em
+
+			@media (min-width: 768px)
+				img
+					width: 60%
+					object-fit: cover
+
+				.custom-c-texts
+					width: 40%
+
+				h4
+					display: -webkit-box !important
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 4
+					overflow: auto
+
+			@media (max-width: 768px)
+				img
+					width: 100%
+
+		&.section
+			padding: 0 18px
+			margin: 45px auto 0 !important
+
+	.custom4
+		padding: 0px !important
+
+		.partners-section
+			.partners-section-inner
+				width: 90%
+				margin: 0 auto
+				padding: 50px 0
+				text-align: center
+
+				h2
+					display: block !important
+
+				.ser-contain
+					margin-top: calc(25px + (50 - 25) * (100vw - 320px) / (1920 - 320))
+
+					.right
+						right: 0
+						top: 0
+
+					.slick-list
+						margin: 0 auto
+						width: 93%
+
+						.slick-slide
+							overflow: hidden
+
+
+						.ser-inner
+							position: relative
+							margin: 0 17.5px
+
+							.ser-text, img
+								width: 100%
+
+							.ser-text
+								border-bottom-left-radius: 50%
+								border-bottom-right-radius: 50%
+								width: 110%
+								background: linear-gradient(90deg, #55b9e4 0%, #398bc6 52%, #235fa6 100%)
+								height: 80px
+								position: absolute
+								display: flex
+								align-items: center
+								justify-content: center
+								left: 0
+								right: 0
+								transform: translateX(-5%)
+								h4
+									color: $w
+									margin-bottom: 0
+									width: 75%
+
+							a
+								position: absolute
+								top: 0
+								left: 0
+								right: 0
+								bottom: 0
+								z-index: 1
+
+							.block
+								height: 50px
+
+		.arrow-con
+			text-align: center
+			.btn
+				background: $ygrdnt
+			&:hover
+				.btn
+					background: $rygrdnt !important
+					color: $w !important
+
+			@media (max-width: 768px)	
+				padding-bottom: 50px
+
+	.customcontact
+		&.section-space
+			padding: calc(50px + (100 - 50) * (100vw - 320px) / (1920 - 320)) 0
+
+		.custom-contact-con
+			width: 85%
+			margin: 0 auto
+			box-shadow: 5px 0px 15px #686868
+			display: flex
+			min-height: 500px
+			@media (max-width: 768px)
+				width: 100% !important
+
+			.contact-deets
+				display: flex
+				justify-content: center
+				flex-direction: column
+				position: relative
+				overflow: hidden
+
+				.deets-inner
+					width: 85%
+					margin: 0 auto
+
+					h2
+						display: block
+						color: $lblue
+						text-align: left !important
+						font-weight: 600
+						margin-bottom: 20px
+
+					address
+						// overflow: hidden
+						iframe
+							height: 100%
+
+					*
+						color: $lblue
+
+					i
+						margin-right: 10px
+					.email
+						width: 95%
+						overflow: auto
+						display: flex
+						align-items: center
+
+				img
+					position: absolute
+					z-index: -1
+					top: 0
+					left: 0
+					bottom: 0
+					width: 100%
+					right: 0
+					height: 100%
+					object-fit: cover
+
+			.form-con
+				display: flex
+				align-items: center
+				flex-direction: column
+				background: $lgrdnt
+
+				.form-desc
+					text-align: center
+					color: $w
+					width: 92%
+					margin: 50px 0 20px
+
+				form
+					width: 94%
+					margin: 0 auto
+
+					input, textarea
+						border-radius: 8px !important
+						&::placeholder
+							color: $lblue
+							font-size: 12px
+
+					.form-group
+						margin-bottom: 18px
+
+					.contact-footer
+						display: flex
+						align-items: center
+						justify-content: space-between
+						margin-bottom: 35px
+
+						#google_recaptcha
+							margin-bottom: 0
+
+						.btn
+							background: $ygrdnt
+							border-radius: 25px !important
+							&:hover
+								background: $rygrdnt !important
+
+		@media (min-width: 1400px)
+			address
+				width: 75%
+
+		@media (max-width: 1400px)
+			.deets-inner
+				background: rgba(255,255,255,.3)
+
+		@media (min-width: 991px)
+			.contact-deets
+				width: 40%
+
+			.form-con
+				width: 60%
+
+		@media (max-width: 991px)
+			.custom-contact-con
+				flex-direction: column
+				flex-wrap: wrap
+
+				.deets-inner
+					margin: 50px auto !important
+
+		@media (max-width: 768px)
+			.custom-contact-con
+				overflow: hidden
+
+				.contact-deets
+					width: 100%
+
+					.deets-inner
+						// background: rgba(255,255,255,.3)
+						margin: 20px auto !important
+
+				.form-con
+					width: 100%
+
+				.contact-footer
+					flex-direction: column
+
+.common-home
+	.curve
+		top: -70%
+footer
+	position: relative
+	.curve
+		background: $dgrdnt
+		position: absolute
+		z-index: -2
+		height: 100%
+		overflow: hidden
+		// transform: translateY(1px)
+		width: 100%
+		top: -24%
+
+		.inner-curve
+			height: calc(80px + (220 - 80) * (100vw - 320px) / (1920 - 320))
+			background: $w
+			border-radius: 50%
+			width: 105%
+			transform: translate(-2.5%, -55%)
+
+.floating-social-icons
+	position: fixed
+	right: 20px
+	display: flex
+	flex-direction: column-reverse
+	bottom: 80px
+	z-index: 1
+	img
+		max-width: 51px
+		margin-top: 10px
+
+footer
+	background: $dgrdnt
+	.footer-upper-contet
+		margin-bottom: 50px
+		h5
+			font-weight: 600
+			margin-bottom: 20px
+
+		ul
+			line-height: 2em
+			li
+				a
+					text-transform: uppercase
+					font-size: 13px
+
+		.footer-contact-info
+			div
+				width: 90%
+				color: $w
+
+			h5
+				text-transform: uppercase
+
+		.newsletter-section
+			.flex
+				&.input-wrap
+					background: $w
+					border-radius: 8px
+					display: flex
+					align-items: center
+
+				input
+					border: none
+					box-shadow: none
+					&::placeholder
+						color: $lblue
+						font-size: 13px
+
+				.btn
+					background: transparent
+
+	.footer-bottom
+		*
+			color: $w
+
+		a, p, span
+			text-decoration: none
+			text-transform: uppercase !important
+
+		@media (max-width: 1100px)
+			flex-direction: column
+			display: flex
+			justify-content: center
+			.col-xs-12
+				width: 100%
+				text-align: center
+
+	@media (max-width: 991px)
+		#id0
+			display: none
+
+.custom-outer-con
+	.custom-inner
+		position: relative
+		&:hover
+			h3
+				color: $dblue !important
+
+			.btn
+				background: $dgrdnt !important
+
+			.overlay
+				background: rgba(255,255,255,.6)
+				&.two
+					background: transparent
+
+		.overlay
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			z-index: 1
+
+		.ctexts
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 20px
+			display: flex
+			align-items: flex-start
+			flex-direction: column
+			justify-content: center
+			width: 60%
+			z-index: 2
+
+			h3
+				color: $w
+				font-weight: 600
+				margin-bottom: 15px
+				line-height: 1.4em
+				font-size: calc(16px + (21 - 16) * (100vw - 320px) / (1920 - 320))
+
+			.btn
+				background: $ygrdnt
+				display: flex
+				align-items: center
+				justify-content: space-between
+				color: $w !important
+				text-transform: capitalize
+				font-size: 15px
+				letter-spacing: 0
+				padding: calc(10px + (15 - 10) * (100vw - 320px) / (1920 - 320)) 18px
+
+				i
+					border: 2px solid $w
+					border-radius: 50%
+					font-size: 12px
+					width: 20px
+					height: 20px
+					display: flex
+					align-items: center
+					justify-content: center
+					color: $w !important
+					&:before
+						transform: translateX(1px)
+
+	@media (min-width: 991px)
+		height: 85vh
+		display: flex
+
+		#slideshow0
+			width: 70%
+
+		.custom-container
+			width: 30%
+
+			.custom-inner
+				height: calc(100% / 3)
+
+	@media (max-width: 991px)
+		.custom-inner
+			img
+				width: 100%
+
+
+	#slideshow0
+		transform: translateX(1px)
+		.owl-stage-outer , .owl-stage, .owl-item , img
+			height: 100% !important
+			object-fit: cover
+
+		.slider-slideshow-description
+			.container
+				width: 95%
+
+				@media (min-width: 991px)
+					.slider-slideshow-description-texts
+						width: 55%
+
+			.slider-slideshow-description-texts
+				padding: 0 calc(0px + (32 - 0) * (100vw - 320px) / (1920 - 320))
+
+				.slideshow-text-0
+					font-size: calc(22px + (40 - 22) * (100vw - 320px) / (1920 - 320))
+
+				.slideshow-text-1
+					font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1920 - 320))
+
+.fixed-header
+	.container
+		width: 100%
+		padding: 0
+
+		.header-top
+			*
+				color: $dblue
+
+			#enquiry>a>i
+				font-size: 16px !important
+
+			.search_container
+				width: 40%
+				input
+					&::placeholder
+						text-transform: capitalize
+
+				i
+					margin-right: 0
+
+			#account, #cart, #enquiry
+				a
+					display: flex
+					justify-content: center
+
+			.badge
+				background: transparent
+				span
+					font-size: 15px
+
+		@media (min-width: 991px)
+			.header-logo
+				margin-left: 50px
+
+			.header-top
+				margin-right: 50px
+				i
+					margin-right: 10px
+
+
+		.header-menu
+			background: $dgrdnt
+			color: $w
+			a
+				font-size: 16px
+
+				.sub-arrow
+					display: none
+
+		#main-menu
+			ul
+				min-width: 15em
+				border-radius: 0 !important
+				.sub-arrow
+					display: block
+					top: 6px
+					right: 3px
+					bottom: auto
+					margin: 0px
+					margin-left: 6px
+					border-color: #6B6B6B #6B6B6B white white !important
+					height: 5px
+					width: 5px
+					transform: rotate(45deg)
+					border-width: 1px
+					border: 1px solid
+					border-radius: 1px
+				a
+					color: $grey !important
+					font-size: 13px
+					margin: 10px 5px
+					&:hover
+						color: $dblue !important
+
+#mobileNav
+	text-align: left
+
+.header_banner
+	display: flex
+	align-items: center
+	position: relative
+
+	.custom-links
+		display: flex
+		margin-right: 50px
+		a
+			white-space: pre
+			font-weight: 600
+	@media (min-width: 768px)
+		.custom-links
+			position: absolute
+			right: 0
+			top: 0
+			bottom: 0
+			display: flex
+			align-items: center
+
+	@media (max-width: 768px)
+		flex-direction: column-reverse
+
+		.custom-links
+			margin: 5px 0
+
+.product-manufacturer
+	.container
+		width: 100% !important
+
+	footer
+		.container
+			width: 85% !important
+
+	.brands-cont
+		width: 88%
+		margin: 0 auto
+
+	.related_products-m
+		width: 90%
+		margin: 50px auto 0
+		h2
+			text-transform: capitalize
+			display: block !important
+
+		> div
+			margin-bottom: 50px
+
+		.custom-rel-pro
+			.slick-nav
+				&.right
+					right: 0
+					top: 0
+
+			.slick-list
+				width: 90%
+				margin: 0 auto
+
+				.product-gutter
+					margin: 0 10px
+					.product-image
+						position: relative
+						img
+							max-width: 300px
+							min-height: 300px
+							object-fit: contain
+
+						.overlay
+							position: absolute
+							top: 0
+							left: 0
+							right: 0
+							bottom: 0
+
+					.price
+						color: $dblue
+						font-weight: 600
+
+					.label
+						max-width: 100px
+						margin: 0 auto
+
+					h4
+						display: -webkit-box
+						-webkit-box-orient: vertical
+						-webkit-line-clamp: 2
+						overflow: hidden
+						min-height: 31px
+						a
+							color: $grey
+
+select::-ms-expand
+	display: none
+
+.search-options select
+	height: auto !important
+
+.cart-dorpdown-items .item i
+	padding-right: 0 !important
+	margin-right: 0 !important
+	color: $w !important
+
+#ToTop
+	z-index: 3 !important
+
+.quickcheckoutright
+	.table
+		tr
+			display: flex
+			align-items: center
+
+			td
+				border: none
+
+	#shipping-method
+		.table
+			tr
+				justify-content: space-between
+
+.product-image-additional-container
+	.slick-nav
+		height: 30px !important
+		position: absolute
+		top: 50% !important
+		transform: translateY(-50%) !important
+		background: $dgrdnt
+		border-radius: 50%
+		width: 30px !important
+
+		i
+			border: 1px solid transparent
+			border-radius: 50%
+			padding: 5px
+			width: 28px
+			text-align: center
+			margin: 0px
+
+.about-s
+	margin: 10px 0
+	text-transform: uppercase
+	font-size: 12px
+	a
+		i
+			font-size: 10px
+			border: 1px solid white
+			margin-left: 10px
+			border-radius: 50%
+			padding: 5px
+			width: 17.5px
+			height: 20.5px
+			&:before
+
+	&:hover
+		i
+			border-color: $dblue 
+
+.search-custom
+	input
+		text-transform: none !important
+
+	i
+		color: #BAB9B9 !important
